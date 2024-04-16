@@ -11,7 +11,7 @@ printf "
 Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc
 MACs hmac-sha2-256-etm@openssh.com
 " >> /etc/ssh/sshd_config
- 
+ # /usr/share/crypto-policies/policies/DEFAULT.pol  Remove the week ciphers from here as well
     # Check the previous command resutl
     if [ $? -eq 0 ]; then
         echo " "
